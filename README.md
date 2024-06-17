@@ -4,10 +4,10 @@
 
 ## 🔍 **Examples**
 
-|                             |                                 |
+|        Groundtruth   |  Prediction     |
 | --------------------------- | ------------------------------- |
 | ![gt1](samples/gt1.png) | ![pred1](samples/pred1.png) |
-|                             |                                 |
+| ![gt2](samples/gt2.png) | ![pred2](samples/pred2.png) |
 
 ## 📄 Abstract
 
