@@ -42,4 +42,6 @@ data
 !config/**
 !seghist/
 !seghist/**
+!samples/
+!samples/**
 **/__pycache__/
