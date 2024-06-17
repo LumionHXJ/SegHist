@@ -164,10 +164,6 @@ def unstretch_kernel(poly_pts: np.ndarray,
             distance -= step_size
             distance = max(distance, 0)
         else:
-<<<<<<< HEAD
-            print(_)
-=======
->>>>>>> origin/main
             break 
         expand_poly = poly.buffer(distance)
         expand_poly = np.array(expand_poly.exterior.coords) 

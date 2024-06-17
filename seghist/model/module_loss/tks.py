@@ -1,16 +1,9 @@
-<<<<<<< HEAD
 from typing import Sequence, Tuple, Optional, Dict, Union
-=======
-from typing import Sequence, Tuple, Optional
->>>>>>> origin/main
 
 import cv2
 import numpy as np
 import torch
-<<<<<<< HEAD
 from torch import Tensor
-=======
->>>>>>> origin/main
 
 from mmocr.registry import MODELS
 from mmocr.models.textdet.module_losses import SegBasedModuleLoss
@@ -18,11 +11,6 @@ from mmocr.structures import TextDetDataSample
 
 from seghist.utils import stretch_kernel
 
-<<<<<<< HEAD
-=======
-
-@MODELS.register_module()
->>>>>>> origin/main
 class TKSModuleLoss(SegBasedModuleLoss):
     """Computing module loss using the Text Kernel Stretching method. 
     Generating targets for a segmentation-based model that only predicts 
@@ -120,7 +108,6 @@ class TKSModuleLoss(SegBasedModuleLoss):
         # to_tensor
         gt_shrink = torch.from_numpy(gt_shrink).unsqueeze(0).float()
         gt_shrink_mask = torch.from_numpy(gt_shrink_mask).unsqueeze(0).float()
-<<<<<<< HEAD
         return gt_shrink, gt_shrink_mask
     
 
@@ -149,6 +136,3 @@ class SegHistModuleLoss(TKSModuleLoss):
         results = dict(loss_prob=self.weight_prob * loss_prob)
         
         return results
-=======
-        return gt_shrink, gt_shrink_mask
->>>>>>> origin/main
