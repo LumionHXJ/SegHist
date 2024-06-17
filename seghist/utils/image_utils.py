@@ -558,7 +558,7 @@ class ImageToolkits:
             sample_b[i] = uniform_curve_sampling(curve_b, self.points)
         shortside_length = self.determine_short_length(sample_a, sample_b)
         self.labels, self.cluster_center = self.clustering_polygons(shortside_length)
-        self.preprocess = True
+        self.preprocessed = True
 
     def get_length(self, curve):
         segment_length = dist(curve, np.concatenate([curve[0:1], curve[:-1]], axis=0)) # (k, )
@@ -604,7 +604,7 @@ class ImageToolkits:
             sample_a[i] = uniform_curve_sampling(curve_a, self.points)
             sample_b[i] = uniform_curve_sampling(curve_b, self.points)
 
-        if getattr(self, "preprocess", False):
+        if not getattr(self, "preprocessed", False):
             shortside_length = self.determine_short_length(sample_a, sample_b)
             self.labels, self.cluster_center = self.clustering_polygons(shortside_length)
             

@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 data_root = 'data/historical_document/IACC2022_CHDAC/official_dataset'
+=======
+data_root = './data/historical_document/IACC2022_CHDAC/official_dataset'
+>>>>>>> origin/main
 
 chdac_train_preliminary = dict(
     type='OCRDataset',
@@ -22,7 +26,11 @@ chdac_test = dict(
     test_mode=True,
     pipeline=None)
 
+<<<<<<< HEAD
 data_root = 'data/historical_document/IACC2022_CHDAC/private_dataset'
+=======
+data_root = './data/historical_document/IACC2022_CHDAC/private_dataset'
+>>>>>>> origin/main
 
 chdac_train_private1 = dict(
     type='OCRDataset',

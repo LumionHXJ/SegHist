@@ -76,7 +76,14 @@ custom_imports = dict(
 
 optim_wrapper = dict(
     type='AmpOptimWrapper',
+<<<<<<< HEAD
     optimizer=dict(type='AdamW', lr=1e-4))
 
 #resume = False
 #load_from = './work_dirs_icdar2019/pse-seghist/epoch_600.pth'
+=======
+    optimizer=dict(type='AdamW', lr=1e-4)) # 1e-3
+
+#resume = False
+load_from = './work_dirs_chdac/seghist/final_9712.pth'
+>>>>>>> origin/main

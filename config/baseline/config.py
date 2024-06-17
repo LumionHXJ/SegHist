@@ -61,6 +61,13 @@ default_hooks = dict(
 val_cfg = dict(type='ValLoop')
 test_cfg = dict(type='TestLoop')
 
+<<<<<<< HEAD
+=======
+'''
+param_scheduler = dict(
+    type='MultiStepLR', by_epoch=True, milestones=[110], gamma=0.1)
+'''
+>>>>>>> origin/main
 param_scheduler = [dict(type='ReduceOnPlateauLR', 
                          rule='greater',
                          monitor='Iacc/recall',
@@ -77,5 +84,13 @@ optim_wrapper = dict(
     type='AmpOptimWrapper',
     optimizer=dict(type='AdamW', lr=1e-4))
 
+<<<<<<< HEAD
+=======
+'''
+optim_wrapper = dict(
+    type='OptimWrapper',
+    optimizer=dict(type='AdamW', lr=1e-3))'''
+
+>>>>>>> origin/main
 #resume = True
 #load_from = '/home/huxingjian/model/mmocr/projects/SegHist/work_dirs_baseline/dbnetpp/epoch_5.pth'

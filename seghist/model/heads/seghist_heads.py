@@ -269,7 +269,6 @@ class PANSegHistHead(BaseTextDetHead):
                 img: Tensor,
                 data_samples: Optional[List[TextDetDataSample]]
                 ) -> Tuple[Tensor, Tensor, Tensor]:
-
         if self.with_m2f_mask:
             masks = self.generate_masks(data_samples)
             masks = masks.to(img.device)
