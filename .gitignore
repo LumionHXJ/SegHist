@@ -1,0 +1,45 @@
+# 操作系统生成的文件
+.DS_Store
+Thumbs.db
+
+# 日志文件
+*.log
+
+# Python 编译生成的文件
+*.pyc
+*.pyo
+
+# 虚拟环境
+env/
+venv/
+.venv/
+
+# 配置文件
+.env
+.env.local
+.env.*.local
+
+# 项目依赖
+.mypy_cache/
+.tox/
+.coverage
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+
+# 临时文件和目录
+.dist_test/
+*.swp
+.idea/
+.vscode/
+*.ipynb
+
+# 忽略所有目录，不包含 config 和 seghist，同时忽略下面的pycache
+*/
+data
+!config/
+!config/**
+!seghist/
+!seghist/**
+**/__pycache__/
