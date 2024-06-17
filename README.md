@@ -4,7 +4,10 @@
 
 ## 🔍 **Examples**
 
-
+|                             |                                 |
+| --------------------------- | ------------------------------- |
+| ![gt1](samples/gt1.png) | ![pred1](samples/pred1.png) |
+|                             |                                 |
 
 ## 📄 Abstract
 
@@ -71,3 +74,9 @@ The data we used can be accessed as follows:
 *_P_, _R_, and _F_ indicate the precision, recall, and F-measure, respectively, at an IoU threshold of 0.5.
 
 ## 🔒 **LICENSE**
+
+This code is distributed under the Apache License. Please note that the datasets we rely on may not be allowed for commercial use.
+
+## 🔗 **CITATION**
+
+TO BE ADDED.
