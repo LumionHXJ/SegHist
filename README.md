@@ -1,9 +1,13 @@
 # (ICDAR 2024) SegHist: A General Segmentation-based Framework for Chinese Historical Document Text Line Detection
 
 <div align="center">
+  
 [![arXiv](https://img.shields.io/badge/arXiv-2406.15485-E44C42)](https://arxiv.org/abs/2406.15485)
+
 [![GitHub watchers](https://img.shields.io/github/watchers/LumionHXJ/SegHist?style=social)](https://github.com/LumionHXJ/SegHist/watchers)
+
 [![GitHub stars](https://img.shields.io/github/stars/LumionHXJ/SegHist?style=social)](https://github.com/LumionHXJ/SegHist/stargazers)
+
 [![Visitor Badge](https://visitor-badge.glitch.me/badge?page_id=LumionHXJ.SegHist)](https://github.com/LumionHXJ/SegHist)
 </div>
 
