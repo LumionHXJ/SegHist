@@ -90,4 +90,18 @@ This code is distributed under the Apache License. Please note that the datasets
 
 ## 🔗 **CITATION**
 
-TO BE ADDED.
+```
+@misc{hu2024seghistgeneralsegmentationbasedframework,
+      title={SegHist: A General Segmentation-based Framework for Chinese Historical Document Text Line Detection}, 
+      author={Xingjian Hu and Baole Wei and Liangcai Gao},
+      year={2024},
+      eprint={2406.15485},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL}
+      url={https://arxiv.org/abs/2406.15485}, 
+}
+```
+
+## 📧 **CONTACT US**
+
+If you have any question, please contact: huxingjian@pku.edu.cn.
