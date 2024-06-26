@@ -8,7 +8,7 @@
 
 [![GitHub stars](https://img.shields.io/github/stars/LumionHXJ/SegHist?style=social)](https://github.com/LumionHXJ/SegHist/stargazers)
 
-[![Visitor Badge](https://visitor-badge.glitch.me/badge?page_id=LumionHXJ.SegHist)](https://github.com/LumionHXJ/SegHist)
+[![Visits Badge](https://badges.pufler.dev/visits/LumionHXJ/SegHist)](https://github.com/LumionHXJ/SegHist)
 </div>
 
 **Official implementation based on [MMOCR](https://github.com/open-mmlab/mmocr) for paper ["SegHist: A General Segmentation-based Framework for Chinese Historical Document Text Line Detection"](https://arxiv.org/abs/2406.15485).**
