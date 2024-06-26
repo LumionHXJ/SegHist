@@ -91,7 +91,7 @@ This code is distributed under the Apache License. Please note that the datasets
 ## 🔗 **CITATION**
 
 ```
-@misc{hu2024seghistgeneralsegmentationbasedframework,
+@misc{hu2024seghist,
       title={SegHist: A General Segmentation-based Framework for Chinese Historical Document Text Line Detection}, 
       author={Xingjian Hu and Baole Wei and Liangcai Gao},
       year={2024},
