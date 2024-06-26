@@ -2,7 +2,7 @@
 
 <div align="center">
   
-[![arXiv](https://img.shields.io/badge/arXiv-2406.15485-E44C42)](https://arxiv.org/abs/2406.15485)
+[![arXiv](https://img.shields.io/badge/Arxiv-2406.15485-A42C25?style=flat&logo=arXiv&logoColor=A42C25)](https://arxiv.org/abs/2406.15485)
 
 [![GitHub watchers](https://img.shields.io/github/watchers/LumionHXJ/SegHist?style=social)](https://github.com/LumionHXJ/SegHist/watchers)
 
