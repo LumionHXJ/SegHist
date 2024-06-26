@@ -1,8 +1,13 @@
 # (ICDAR 2024) SegHist: A General Segmentation-based Framework for Chinese Historical Document Text Line Detection
 
-[![arXiv](https://img.shields.io/badge/arXiv-2406.15485-b31b1b.svg)](https://arxiv.org/abs/2406.15485)
-
-</div>
+<p align="center">
+  <a href='https://arxiv.org/abs/2406.15485'>
+    <img src='https://img.shields.io/badge/Arxiv-2406.15485-A42C25?style=flat&logo=arXiv&logoColor=A42C25'>
+  </a>
+  <a href="" target='_blank'>
+    <img src="https://visitor-badge.laobi.icu/badge?page_id=LumionHXJ.SegHist&left_color=gray&right_color=blue">
+  </a>
+</p>
 
 **Official implementation based on [MMOCR](https://github.com/open-mmlab/mmocr) for paper ["SegHist: A General Segmentation-based Framework for Chinese Historical Document Text Line Detection"](https://arxiv.org/abs/2406.15485).**
 
