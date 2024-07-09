@@ -93,11 +93,11 @@ This code is distributed under the Apache License. Please note that the datasets
 ```
 @misc{hu2024seghist,
       title={SegHist: A General Segmentation-based Framework for Chinese Historical Document Text Line Detection}, 
-      author={Xingjian Hu and Baole Wei and Liangcai Gao},
+      author={Xingjian Hu and Baole Wei and Liangcai Gao and Jun Wang},
       year={2024},
       eprint={2406.15485},
       archivePrefix={arXiv},
-      primaryClass={cs.CL}
+      primaryClass={cs.CL},
       url={https://arxiv.org/abs/2406.15485}, 
 }
 ```
