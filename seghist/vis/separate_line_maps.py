@@ -26,8 +26,8 @@ def main(data_root = './data/historical_document/IACC2022_CHDAC/official_dataset
 
     kernel_single = cv2.applyColorMap(kernel_single[..., np.newaxis], cv2.COLORMAP_VIRIDIS)
     overlay = cv2.addWeighted(image, 0.6, kernel_single, 0.4, 0)
-    cv2.imwrite('./vis/results/out_single.png', overlay)
+    cv2.imwrite('./seghist/vis/results/out_single.png', overlay)
 
     kernel_double = cv2.applyColorMap(kernel_double[..., np.newaxis], cv2.COLORMAP_VIRIDIS)
     overlay = cv2.addWeighted(image, 0.6, kernel_double, 0.4, 0)
-    cv2.imwrite('./vis/results/out_double.png', overlay)
+    cv2.imwrite('./seghist/vis/results/out_double.png', overlay)

@@ -53,4 +53,4 @@ def main():
     axes[1].set_ylabel('vertical aspect ratio')
     axes[1].set_yticks([1, 5, 10, 15, 20, 25, 30, 35])
     axes[1].set_xticks(np.arange(1,10,1))
-    plt.savefig('./vis/results/tks.pdf')
+    plt.savefig('./seghist/vis/results/tks.pdf')
