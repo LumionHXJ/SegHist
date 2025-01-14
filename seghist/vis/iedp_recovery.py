@@ -14,10 +14,10 @@ from mpl_toolkits.axes_grid1 import make_axes_locatable
 from matplotlib.colors import LogNorm
 
 from mmocr.utils.polygon_utils import poly_make_valid
-
+import pickle
 from seghist.utils import iou, unstretch_kernel, stretch_kernel, ImageToolkits
 
-def draw_fig(iou_db, iou_db2, iou_iedp, output='./vis/results/iedp_recovery.pdf'):
+def draw_fig(iou_db, iou_db2, iou_iedp, output='./seghist/vis/results/iedp_recovery.pdf'):
     plt.rc('font', size=14)
     iou_db = np.array(iou_db)
     iou_db2 = np.array(iou_db2)

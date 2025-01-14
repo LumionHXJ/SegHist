@@ -11,7 +11,7 @@ from mmocr.apis import TextDetInferencer
 from seghist.utils import ImageToolkits, iou
 
 def draw_fig():
-    with open("./vis/results/db_as.txt") as f:
+    with open("./seghist/vis/results/db_as.txt") as f:
         db = []
         num = []
         for l in f.readlines():
@@ -19,17 +19,17 @@ def draw_fig():
             db.append(db_)
             num.append(num_)
 
-    with open("./vis/results/tks_as.txt") as f:
+    with open("./seghist/vis/results/tks_as.txt") as f:
         tks = []
         for l in f.readlines():
             ratio, num_, tks_ = tuple(map(float, l.strip().split(',')))
             tks.append(tks_)
 
-    with open("./vis/results/iedp_as.txt") as f:
+    with open("./seghist/vis/results/iedp_as.txt") as f:
         iedp = []
         for l in f.readlines():
             ratio, num_, iedp_ = tuple(map(float, l.strip().split(',')))
-            tks.append(iedp_)
+            iedp.append(iedp_)
 
     line = [db, tks, iedp]
     colors = ['purple', 'royalblue', 'orangered']
@@ -66,12 +66,12 @@ def draw_fig():
     ax1.set_ylim(bottom=min(min(db), min(tks), min(iedp)) - 0.03, top=0.95)
     ax2.set_ylim(0, max(num) * 1.2)
     ax1.grid()
-    plt.savefig('./vis/results/ar_res.pdf')
+    plt.savefig('./seghist/vis/results/ar_res1.pdf')
 
 
 def main(output):
-    inferencer = TextDetInferencer(ckpt='/home/huxingjian/model/mmocr/projects/SegHist/work_dirs_chdac/dbnetpp_kernel/epoch_55_9643.pth', 
-                                   config='/home/huxingjian/model/mmocr/projects/SegHist/work_dirs_chdac/dbnetpp_kernel/seghist_resnet50-dcnv2_fpnc.py',
+    inferencer = TextDetInferencer(ckpt='./work_dirs_chdac/dbnetpp_kernel/epoch_55_9643.pth', 
+                                   config='./work_dirs_chdac/dbnetpp_kernel/seghist_resnet50-dcnv2_fpnc.py',
                                    device='cuda:0')
     img_root = './data/historical_document/IACC2022_CHDAC/official_dataset/final/test'
     with open("./data/historical_document/IACC2022_CHDAC/official_dataset/final/test/ocr_test.json") as f:
@@ -113,4 +113,4 @@ def main(output):
 
     with open(output, mode='w') as f:
         for i in range(len(ratio_list[:-1])):
-            f.write(f"{ratio_list[i]}, {len(mean_iou[i])}, {sum(mean_iou[i])/(len(mean_iou[i])+1e-4)}")
+            f.write(f"{ratio_list[i]}, {len(mean_iou[i])}, {sum(mean_iou[i])/(len(mean_iou[i])+1e-4)}\n")

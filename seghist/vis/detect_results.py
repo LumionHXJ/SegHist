@@ -44,8 +44,8 @@ def get_prediction(inferencer):
             f.write(f'{data["img_path"]}\t{precision}\t{recall}\t{f1}\n')
 
 def main(use_hard_example=True):
-    inferencer = TextDetInferencer(ckpt='/home/huxingjian/model/mmocr/projects/SegHist/work_dirs_chdac/pse_seghist/epoch_150.pth', 
-                               config='/home/huxingjian/model/mmocr/projects/SegHist/config/seghist/seghist_resnet50-dcnv2_fpnc.py',
+    inferencer = TextDetInferencer(ckpt='./work_dirs_chdac/pse_seghist/epoch_150.pth', 
+                               config='./config/seghist/seghist_resnet50-dcnv2_fpnc.py',
                                device='cuda:0')
     img_root = './data/historical_document/IACC2022_CHDAC/official_dataset/final/train'
     with open("./data/historical_document/IACC2022_CHDAC/official_dataset/final/train/ocr_train.json") as f:
@@ -84,7 +84,7 @@ def main(use_hard_example=True):
     plt.imshow(img)
     plt.imshow(mask, alpha=0.4)
     plt.axis('off')
-    plt.savefig(f"./vis/results/{data['img_path'].split('.')[0]}_miss.jpg")
+    plt.savefig(f"./seghist/vis/results/{data['img_path'].split('.')[0]}_miss.jpg")
 
     # false positive
     mask = np.zeros(img.shape[:2])
@@ -100,7 +100,7 @@ def main(use_hard_example=True):
     plt.imshow(img)
     plt.imshow(mask, alpha=0.4)
     plt.axis('off')
-    plt.savefig(f"./vis/results/{data['img_path'].split('.')[0]}_fp.jpg")
+    plt.savefig(f"./seghist/vis/results/{data['img_path'].split('.')[0]}_fp.jpg")
 
     # full detect
     mask = np.zeros(img.shape[:2])
@@ -111,7 +111,7 @@ def main(use_hard_example=True):
     plt.imshow(img)
     plt.imshow(mask, alpha=0.4, cmap='jet')
     plt.axis('off')
-    plt.savefig(f"./vis/results/{data['img_path'].split('.')[0]}_detect.jpg")
+    plt.savefig(f"./seghist/vis/results/{data['img_path'].split('.')[0]}_detect.jpg")
 
     # ground truth
     mask = np.zeros(img.shape[:2])
@@ -123,4 +123,4 @@ def main(use_hard_example=True):
     plt.imshow(img)
     plt.imshow(mask, alpha=0.4, cmap='jet')
     plt.axis('off')
-    plt.savefig(f"./vis/results/{data['img_path'].split('.')[0]}_gt.jpg")
+    plt.savefig(f"./seghist/vis/results/{data['img_path'].split('.')[0]}_gt.jpg")

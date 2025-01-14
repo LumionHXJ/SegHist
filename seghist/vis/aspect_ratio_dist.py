@@ -70,7 +70,7 @@ def main():
             for l in f.readlines():
                 l = list(map(float, l.strip().split(',')[4:]))
                 polygons.append(np.array(l).reshape(-1,2))
-            hi = ImageToolkits(polygons, reorder=False)
+            hi = ImageToolkits(polygons, reorder=True)
             aspect_ratio_15.extend(hi.aspect_ratio())
 
     with open('./data/historical_document/ICDAR2019HDRC_Chinese/train_label.json') as f:
